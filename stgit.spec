@@ -1,7 +1,9 @@
+%define _buildid .1
+
 Summary: Patch stack for Git repositories
 Name: stgit
 Version: 0.17.1
-Release: 2%{?dist}
+Release: 2%{_buildid}%{?dist}
 License: GPLv2
 Group: Development/Tools
 URL: http://www.procode.org/stgit/
