@@ -1,0 +1,33 @@
+From f7915c22c53ccd9c9481b2b96596a2c591ea4160 Mon Sep 17 00:00:00 2001
+From: Rajiv M Ranganath <rajiv.ranganath@atihita.com>
+Date: Tue, 22 Mar 2016 09:58:11 +0000
+Subject: [PATCH] Add support for `amzn-layout`
+
+---
+ Makefile | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index c306881..191f444 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,6 +1,6 @@
+ prefix	?= $(HOME)
+ DESTDIR	?= /
+-PYTHON	?= python2
++PYTHON	?= python2.7
+ 
+ TEST_PATCHES ?= ..
+ 
+@@ -8,7 +8,7 @@ all:
+ 	$(PYTHON) setup.py build
+ 
+ install:
+-	$(PYTHON) setup.py install --prefix=$(prefix) --root=$(DESTDIR) --force
++	$(PYTHON) setup.py install --prefix=$(prefix) --root=$(DESTDIR) --force --install-layout=amzn
+ 
+ doc:
+ 	cd Documentation && $(MAKE) all
+-- 
+2.4.3
+
