@@ -14,8 +14,8 @@ Patch0: stgit-0.16-tmpl.patch
 Patch1001: 1001-Add-support-for-amzn-layout.patch
 
 BuildArch: noarch
-BuildRequires: git-core, python2-devel, asciidoc, xmlto
-Requires: git-core, git-email, python2, vim-filesystem
+BuildRequires: git-core, python27-devel, asciidoc, xmlto
+Requires: git-core, git-email, python27, vim-filesystem
 
 %description
 StGit is a Python application providing similar functionality
@@ -55,7 +55,7 @@ install -m 644 -D contrib/vim/ftdetect/stg.vim $RPM_BUILD_ROOT%{_datadir}/vim/vi
 %files
 %doc AUTHORS COPYING README RELEASENOTES
 %{_bindir}/stg
-%{python_sitelib}/*
+%{python27_sitelib}/*
 %{_mandir}/man1/stg*
 %{_sysconfdir}/bash_completion.d/
 %{_datadir}/stgit/
