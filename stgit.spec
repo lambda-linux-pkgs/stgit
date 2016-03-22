@@ -10,6 +10,9 @@ Source: http://download.gna.org/%{name}/%{name}-%{version}.tar.gz
 # resolves: #872651
 Patch0: stgit-0.16-tmpl.patch
 
+# Lambda Linux patches
+Patch1001: 1001-Add-support-for-amzn-layout.patch
+
 BuildArch: noarch
 BuildRequires: git-core, python2-devel, asciidoc, xmlto
 Requires: git-core, git-email, python2, vim-filesystem
@@ -28,6 +31,9 @@ either use plain Git commands or the Cogito tool.
 %prep
 %setup -q
 %patch0 -p1 -b .templ
+
+%patch1001 -p1
+
 chmod -x contrib/stgbashprompt.sh
 
 %build
