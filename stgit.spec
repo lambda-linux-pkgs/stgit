@@ -67,6 +67,10 @@ install -m 644 -D contrib/vim/ftdetect/stg.vim $RPM_BUILD_ROOT%{_datadir}/vim/vi
 %{_datadir}/vim/vimfiles/ftdetect/stg.vim
 
 %changelog
+* Thu Mar 24 2016 Rajiv M Ranganath <rajiv.ranganath@atihita.com> - 0.17.1-2.1
+- Update spec file for new patch
+- Add patch `1002-Fix-vim-configuration.patch`
+
 * Tue Mar 22 2016 Rajiv M Ranganath <rajiv.ranganath@atihita.com> - 0.17.1-2.1
 - Adapt spec file for AL/LL
 - Add Lambda Linux patches
