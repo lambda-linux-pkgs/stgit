@@ -14,6 +14,7 @@ Patch0: stgit-0.16-tmpl.patch
 
 # Lambda Linux patches
 Patch1001: 1001-Add-support-for-amzn-layout.patch
+Patch1002: 1002-Fix-vim-configuration.patch
 
 BuildArch: noarch
 BuildRequires: git-core, python27-devel, asciidoc, xmlto
@@ -35,6 +36,7 @@ either use plain Git commands or the Cogito tool.
 %patch0 -p1 -b .templ
 
 %patch1001 -p1
+%patch1002 -p1
 
 chmod -x contrib/stgbashprompt.sh
 
