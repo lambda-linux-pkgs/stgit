@@ -1,4 +1,4 @@
-%define _buildid .1
+%define _buildid .2
 
 Summary: Patch stack for Git repositories
 Name: stgit
